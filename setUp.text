@@ -1,0 +1,20 @@
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+Now go to tailwind Config file and change this-->
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+now go to index.css and add this
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
